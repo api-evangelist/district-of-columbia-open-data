@@ -23,6 +23,10 @@ apis:
       - type: Documentation
         url: http://opendata.dc.gov/pages/using-apis
 common:
+  - type: VulnerabilityDisclosure
+    url: security/district-of-columbia-open-data-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/district-of-columbia-open-data-domain-security.yml
   - type: Website
     url: http://opendata.dc.gov/pages/using-apis
   - type: PublicAPIsListing
