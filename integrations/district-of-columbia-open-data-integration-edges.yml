@@ -37,6 +37,37 @@ edges:
     detected: '2026-10-21'
   detected_by: sweep-open-data-portals.py
   first_seen: '2026-10-21'
+- partner_name: Open Mobility Foundation MDS agencies
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://raw.githubusercontent.com/openmobilityfoundation/mobility-data-specification/main/agencies.csv
+  category: MDS agency registration
+  contract_reference:
+    register: Open Mobility Foundation MDS agencies
+    standard: Mobility Data Specification (MDS)
+    spec_file: null
+    role: mds-agency
+    registrations:
+    - registered_name: District of Columbia
+      agency_id: 8aca1cf2-ffa5-46d8-b747-20cf00a7c7f1
+      agency_city: Washington
+      agency_state: DC
+      agency_country: US
+      department_url: https://ddot.dc.gov/page/dockless-vehicle-permits-district
+      requirement_url: null
+      matched_domain: dc.gov
+      matched_by: domain+local-verified
+      identity_note: DC government open data (opendata.dc.gov); the MDS agency is DDOT on ddot.dc.gov
+    signal_note: 'government side: the city is a registered MDS agency (consumer of providers'' MDS feeds); participation
+      only'
+    detected_by: sweep-open-mobility-foundation-mds.py
+    detected: '2026-10-22'
+  detected_by: sweep-open-mobility-foundation-mds.py
+  first_seen: '2026-10-22'
 generated: '2026-10-21'
 method: searched
 source:
@@ -53,3 +84,6 @@ checked:
 - 'https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/dcat-ap (no implementations or conformance
   register: the ''SEMIC map'' link redirects to the collection home)'
 - https://raw.githubusercontent.com/ckan/ckan-instances/gh-pages/config/instances.json
+- https://openmobilityfoundation.org
+- https://raw.githubusercontent.com/openmobilityfoundation/mobility-data-specification/main/agencies.csv
+- https://raw.githubusercontent.com/openmobilityfoundation/mobility-data-specification/main/providers.csv

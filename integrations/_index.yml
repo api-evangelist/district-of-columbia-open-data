@@ -41,3 +41,34 @@
     detected: '2026-10-21'
   status: not-a-workflow
   arazzo: null
+- slug: district-of-columbia-open-data-open-mobility-foundation-mds-agencies
+  label: Open Mobility Foundation MDS agencies
+  partner_name: Open Mobility Foundation MDS agencies
+  category: MDS agency registration
+  type: register
+  channel: standard-directory
+  evidence: https://raw.githubusercontent.com/openmobilityfoundation/mobility-data-specification/main/agencies.csv
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: Open Mobility Foundation MDS agencies
+    standard: Mobility Data Specification (MDS)
+    spec_file: null
+    role: mds-agency
+    registrations:
+    - registered_name: District of Columbia
+      agency_id: 8aca1cf2-ffa5-46d8-b747-20cf00a7c7f1
+      agency_city: Washington
+      agency_state: DC
+      agency_country: US
+      department_url: https://ddot.dc.gov/page/dockless-vehicle-permits-district
+      requirement_url: null
+      matched_domain: dc.gov
+      matched_by: domain+local-verified
+      identity_note: DC government open data (opendata.dc.gov); the MDS agency is DDOT on ddot.dc.gov
+    signal_note: 'government side: the city is a registered MDS agency (consumer of providers'' MDS feeds); participation
+      only'
+    detected_by: sweep-open-mobility-foundation-mds.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
